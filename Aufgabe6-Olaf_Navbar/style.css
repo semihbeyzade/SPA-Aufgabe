@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 20px;
+  padding: 5%;
+  background: #F3F1EC;
+  box-sizing: border-box;
+}
+
+nav{
+  position: absolute;
+  width: 90%;
+  display: flex;
+  bottom: 0px;
+  justify-content: end;
+  align-items: end;
+}
+ul,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navitem{
+  display: flex;
+  flex-basis: 25%;
+  background: red;
+  flex-shrink: 1;
+  overflow: hidden;
+  transition: all .4s ease-in-out .2s;
+  position: relative;
+  cursor: pointer;
+  max-height: 100vh;
+}
+
+
+.navitem:after{
+  position: absolute;
+  content:"";
+  right: 0px;
+  top:0px;
+  height: 100%;
+  background: blue;
+  display: block;
+  width: 30px;
+}
+
+.navitem:hover, .navitem.active{
+  flex-basis: 60%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+
+.navitem .content{
+  position: absolute;
+  left: 20px;
+  width: 10000px;
+  pointer-events: none;
+  transition: all .4s ease-in-out;
+}
+
+.navitem .content .actors{
+  opacity: 0;
+  transition: all .4s ease-in-out 0s;
+  pointer-events: none;
+}
+
+
+.navitem:hover .content .actors, .navitem.active .content .actors{
+  opacity: 1;
+  transition-delay: .4s;
+}
+.navitem .content .description{
+  opacity: 0;
+  transition: all .4s ease-in-out 0s;
+  pointer-events: none;
+  width: 500px;
+}
+
+.navitem.active .content .description{
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+.navitem .bg{
+  width: 500px;
+  height: 250px;
+  content: "";
+  display: block;
+  opacity: 0;
+  background-size: contain;
+  background-position: top center;
+  transition: all .4s ease-in-out 0s;
+  pointer-events: none;
+  left: 20px;
+}
+
+.navitem.active .bg{
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+.navitem span{
+  font-weight: 900;
+  font-size: 200px;
+  transition: all .4s ease-in-out;
+  pointer-events: none;
+}
+
+.navitem:hover span, .navitem.active span{
+  font-size: 70px;
+}
+
+.navitem:nth-of-type(1){
+  background: #eea497;
+  height: 680px;
+}
+.navitem:nth-of-type(1) .content{
+  top:80px;
+}
+.navitem:nth-of-type(1):after{
+  background: #eea497;
+}
+.navitem:nth-of-type(2){
+  background: #9d9f9f;
+  height: 780px;
+}
+.navitem:nth-of-type(2) .content{
+  top:180px;
+}
+.navitem:nth-of-type(2):after{
+  background: #9d9f9f;
+}
+.navitem:nth-of-type(3){
+  background: #88b2cc;
+  height: 670px;
+}
+.navitem:nth-of-type(3) .content{
+  top:70px;
+}
+.navitem:nth-of-type(3):after{
+  background: #88b2cc;
+}
+.navitem:nth-of-type(3):hover span, .navitem:nth-of-type(3).active span{
+  font-size: 50px;
+}
+.navitem:nth-of-type(4){
+  height: 750px;
+  background: #ffd294;
+}
+
+.navitem:nth-of-type(4) .content{
+  top:150px;
+}
+.navitem:nth-of-type(4):after{
+  background: #ffd294;
+}
+
+.navitem.active .content{
+  top: 30px;
+}
