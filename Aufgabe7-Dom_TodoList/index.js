@@ -1,6 +1,7 @@
 const inputElem = document.getElementById('input')
 const btnElem = document.getElementById('add-btn')
 const listGroupItem = document.querySelector('.list-group')
+const deleteItem = document.querySelector('.fa-remove')
 
 btnElem.addEventListener('click', addTodo)
 
@@ -39,3 +40,10 @@ listGroupItem.addEventListener('click', (e) => {
     }
     
 })
+
+
+
+
+
+
+
