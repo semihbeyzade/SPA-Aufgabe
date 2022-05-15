@@ -1,0 +1,34 @@
+.rot {
+  color: red;
+}
+
+.blau {
+  color: blue;
+}
+
+.gelb {
+  color: yellow;
+}
+.wennFarbeFehlt {
+  color: black;
+}
+
+.schwarz {
+  color: black;
+}
+
+.btn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-form{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.add-form input{
+  margin-right: 1rem;
+}
