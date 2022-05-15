@@ -1,5 +1,5 @@
 function Ball(props){
-  console.log(props.size)
+  console.log(props)
   return (
     <div onClick={props.onClick} className="Ball" key={props.ballId}
          style={
