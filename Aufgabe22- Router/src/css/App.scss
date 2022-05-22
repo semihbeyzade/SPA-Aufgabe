@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.nav-page{
+  display: flex;
+  flex-direction: column;
+
+  .navbar{
+    display: flex;
+    
+    
+    li {
+      list-style-type: none;
+      margin: 1rem;
+      
+    
+      a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    
+      }
+    }
+  
+  }
+   
+}
+
+.home-page{
+  font-size: 4rem;
+  text-decoration: underline red;
+   
+}
+
+.page1-page{
+  font-size: 4rem;
+  text-decoration: underline red;
+}
+
+.page2-page{
+  font-size: 4rem;
+  text-decoration: underline red;
+}
+ 
+
